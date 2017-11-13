@@ -1,0 +1,6 @@
+framework module Pods_RainfallDemo {
+  umbrella header "Pods-RainfallDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

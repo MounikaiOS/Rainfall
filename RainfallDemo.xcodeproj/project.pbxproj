@@ -14,6 +14,9 @@
 		46B4BA511FB9BAB700443924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B4BA4F1FB9BAB700443924 /* LaunchScreen.storyboard */; };
 		46B4BA5C1FB9BAB700443924 /* RainfallDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA5B1FB9BAB700443924 /* RainfallDemoTests.swift */; };
 		46B4BA671FB9BAB700443924 /* RainfallDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA661FB9BAB700443924 /* RainfallDemoUITests.swift */; };
+		5B79C0B192A5E0E8AE3A0A0E /* Pods_RainfallDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2BA6D31B2E77DB0E5E9BC7 /* Pods_RainfallDemoTests.framework */; };
+		BBF284B84B81828B02B8575F /* Pods_RainfallDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0FC954229956201CA551C8 /* Pods_RainfallDemoUITests.framework */; };
+		E07DDD23BBC7D0E383465B45 /* Pods_RainfallDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403EEF3E43504EA716DA7FFF /* Pods_RainfallDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0FC954229956201CA551C8 /* Pods_RainfallDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainfallDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		403EEF3E43504EA716DA7FFF /* Pods_RainfallDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainfallDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E907275BE161AAF77572C9 /* Pods-RainfallDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		46B4BA431FB9BAB700443924 /* RainfallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainfallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B4BA461FB9BAB700443924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B4BA481FB9BAB700443924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		46B4BA621FB9BAB700443924 /* RainfallDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainfallDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B4BA661FB9BAB700443924 /* RainfallDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainfallDemoUITests.swift; sourceTree = "<group>"; };
 		46B4BA681FB9BAB700443924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A2BA6D31B2E77DB0E5E9BC7 /* Pods_RainfallDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainfallDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845751C3E6CC36E7BAABF022 /* Pods-RainfallDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A961760A4A18FA35A6B8FA12 /* Pods-RainfallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E4F710E3118A2524CA041939 /* Pods-RainfallDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8165F91EA0D2CE293F782A1 /* Pods-RainfallDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F11EEFC138B8E57F79793F8C /* Pods-RainfallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07DDD23BBC7D0E383465B45 /* Pods_RainfallDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B79C0B192A5E0E8AE3A0A0E /* Pods_RainfallDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF284B84B81828B02B8575F /* Pods_RainfallDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				46B4BA5A1FB9BAB700443924 /* RainfallDemoTests */,
 				46B4BA651FB9BAB700443924 /* RainfallDemoUITests */,
 				46B4BA441FB9BAB700443924 /* Products */,
+				74E082247A2B5B1799D84AA3 /* Pods */,
+				D92DD99E323D1D7B752C974E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = RainfallDemoUITests;
 			sourceTree = "<group>";
 		};
+		74E082247A2B5B1799D84AA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A961760A4A18FA35A6B8FA12 /* Pods-RainfallDemo.debug.xcconfig */,
+				F11EEFC138B8E57F79793F8C /* Pods-RainfallDemo.release.xcconfig */,
+				845751C3E6CC36E7BAABF022 /* Pods-RainfallDemoTests.debug.xcconfig */,
+				E8165F91EA0D2CE293F782A1 /* Pods-RainfallDemoTests.release.xcconfig */,
+				E4F710E3118A2524CA041939 /* Pods-RainfallDemoUITests.debug.xcconfig */,
+				41E907275BE161AAF77572C9 /* Pods-RainfallDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D92DD99E323D1D7B752C974E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403EEF3E43504EA716DA7FFF /* Pods_RainfallDemo.framework */,
+				6A2BA6D31B2E77DB0E5E9BC7 /* Pods_RainfallDemoTests.framework */,
+				2C0FC954229956201CA551C8 /* Pods_RainfallDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46B4BA6B1FB9BAB700443924 /* Build configuration list for PBXNativeTarget "RainfallDemo" */;
 			buildPhases = (
+				0AC2E011ED3AF644E4A6F06B /* [CP] Check Pods Manifest.lock */,
 				46B4BA3F1FB9BAB700443924 /* Sources */,
 				46B4BA401FB9BAB700443924 /* Frameworks */,
 				46B4BA411FB9BAB700443924 /* Resources */,
+				7677DC596B80BE14358E54AD /* [CP] Embed Pods Frameworks */,
+				90487A11D22E9E2B3AFE04DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46B4BA6E1FB9BAB700443924 /* Build configuration list for PBXNativeTarget "RainfallDemoTests" */;
 			buildPhases = (
+				9E7CD61E0B49F5CFD478EBD2 /* [CP] Check Pods Manifest.lock */,
 				46B4BA531FB9BAB700443924 /* Sources */,
 				46B4BA541FB9BAB700443924 /* Frameworks */,
 				46B4BA551FB9BAB700443924 /* Resources */,
+				00F291F179FA03815CC011CD /* [CP] Embed Pods Frameworks */,
+				837D4BF2F5152255DE505682 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46B4BA711FB9BAB700443924 /* Build configuration list for PBXNativeTarget "RainfallDemoUITests" */;
 			buildPhases = (
+				57D4D315476240EA935F79BA /* [CP] Check Pods Manifest.lock */,
 				46B4BA5E1FB9BAB700443924 /* Sources */,
 				46B4BA5F1FB9BAB700443924 /* Frameworks */,
 				46B4BA601FB9BAB700443924 /* Resources */,
+				C84E1144C4A51D04736A8E63 /* [CP] Embed Pods Frameworks */,
+				D2BC1B184F5C2750612DF15A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,166 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F291F179FA03815CC011CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0AC2E011ED3AF644E4A6F06B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainfallDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57D4D315476240EA935F79BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainfallDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7677DC596B80BE14358E54AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837D4BF2F5152255DE505682 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90487A11D22E9E2B3AFE04DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E7CD61E0B49F5CFD478EBD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainfallDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84E1144C4A51D04736A8E63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2BC1B184F5C2750612DF15A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46B4BA3F1FB9BAB700443924 /* Sources */ = {
@@ -424,6 +633,7 @@
 		};
 		46B4BA6C1FB9BAB700443924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A961760A4A18FA35A6B8FA12 /* Pods-RainfallDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +648,7 @@
 		};
 		46B4BA6D1FB9BAB700443924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11EEFC138B8E57F79793F8C /* Pods-RainfallDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +663,7 @@
 		};
 		46B4BA6F1FB9BAB700443924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845751C3E6CC36E7BAABF022 /* Pods-RainfallDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +680,7 @@
 		};
 		46B4BA701FB9BAB700443924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8165F91EA0D2CE293F782A1 /* Pods-RainfallDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +697,7 @@
 		};
 		46B4BA721FB9BAB700443924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F710E3118A2524CA041939 /* Pods-RainfallDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +713,7 @@
 		};
 		46B4BA731FB9BAB700443924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E907275BE161AAF77572C9 /* Pods-RainfallDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
