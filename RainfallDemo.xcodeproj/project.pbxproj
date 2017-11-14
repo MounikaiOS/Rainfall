@@ -19,6 +19,8 @@
 		8F5071D21FBAB00700407987 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5071D11FBAB00700407987 /* LoginView.xib */; };
 		8F5071D51FBABD7100407987 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5071D31FBABD7100407987 /* DetailVC.swift */; };
 		8F5071D61FBABD7100407987 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5071D41FBABD7100407987 /* DetailVC.xib */; };
+		8F5071E11FBAFAB800407987 /* GridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5071DF1FBAFAB800407987 /* GridVC.swift */; };
+		8F5071E21FBAFAB800407987 /* GridVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5071E01FBAFAB800407987 /* GridVC.xib */; };
 		BBF284B84B81828B02B8575F /* Pods_RainfallDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0FC954229956201CA551C8 /* Pods_RainfallDemoUITests.framework */; };
 		E07DDD23BBC7D0E383465B45 /* Pods_RainfallDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403EEF3E43504EA716DA7FFF /* Pods_RainfallDemo.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		8F5071D11FBAB00700407987 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		8F5071D31FBABD7100407987 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		8F5071D41FBABD7100407987 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		8F5071DF1FBAFAB800407987 /* GridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridVC.swift; sourceTree = "<group>"; };
+		8F5071E01FBAFAB800407987 /* GridVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridVC.xib; sourceTree = "<group>"; };
 		A961760A4A18FA35A6B8FA12 /* Pods-RainfallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F710E3118A2524CA041939 /* Pods-RainfallDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8165F91EA0D2CE293F782A1 /* Pods-RainfallDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			children = (
 				8F5071D11FBAB00700407987 /* LoginView.xib */,
 				8F5071D41FBABD7100407987 /* DetailVC.xib */,
+				8F5071E01FBAFAB800407987 /* GridVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				46B4BA481FB9BAB700443924 /* LoginVC.swift */,
 				8F5071CF1FBAAE2B00407987 /* ViewController.swift */,
 				8F5071D31FBABD7100407987 /* DetailVC.swift */,
+				8F5071DF1FBAFAB800407987 /* GridVC.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 			files = (
 				46B4BA511FB9BAB700443924 /* LaunchScreen.storyboard in Resources */,
 				46B4BA4E1FB9BAB700443924 /* Assets.xcassets in Resources */,
+				8F5071E21FBAFAB800407987 /* GridVC.xib in Resources */,
 				8F5071D21FBAB00700407987 /* LoginView.xib in Resources */,
 				46B4BA4C1FB9BAB700443924 /* Main.storyboard in Resources */,
 				8F5071D61FBABD7100407987 /* DetailVC.xib in Resources */,
@@ -509,6 +516,7 @@
 				8F5071D01FBAAE2B00407987 /* ViewController.swift in Sources */,
 				8F5071D51FBABD7100407987 /* DetailVC.swift in Sources */,
 				46B4BA491FB9BAB700443924 /* LoginVC.swift in Sources */,
+				8F5071E11FBAFAB800407987 /* GridVC.swift in Sources */,
 				46B4BA471FB9BAB700443924 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

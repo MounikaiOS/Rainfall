@@ -33,7 +33,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         passwordField.trailingUnderlineLabel.text = (passwordField.text?.isEmpty)! ? "Please enter password" : ""
 
         if !((userNameField.text?.isEmpty)!) && !((passwordField.text?.isEmpty)!) {
-            let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
+            let detailVC = GridVC(nibName: "GridVC", bundle: nil)
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
     }
