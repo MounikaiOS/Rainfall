@@ -30,9 +30,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBAction func loginButtonAction(sender: MDCButton) {
         view.endEditing(true)
         userNameField.trailingUnderlineLabel.text = (userNameField.text?.isEmpty)! ? "Please enter username" : ""
-        passwordField.trailingUnderlineLabel.text = (userNameField.text?.isEmpty)! ? "Please enter password" : ""
+        passwordField.trailingUnderlineLabel.text = (passwordField.text?.isEmpty)! ? "Please enter password" : ""
 
-        if !((userNameField.text?.isEmpty)!) && !((userNameField.text?.isEmpty)!) {
+        if !((userNameField.text?.isEmpty)!) && !((passwordField.text?.isEmpty)!) {
             let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
