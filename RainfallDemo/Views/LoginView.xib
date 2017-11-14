@@ -13,6 +13,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="RainfallDemo" customModuleProvider="target">
             <connections>
+                <outlet property="loginButton" destination="YnD-KW-RBb" id="crO-1l-lPW"/>
+                <outlet property="passwordField" destination="TaV-oq-B61" id="nr6-ja-0lE"/>
+                <outlet property="userNameField" destination="t9c-4i-rH5" id="6Lz-gw-8Qh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="eCi-R8-EW5"/>
             </connections>
         </placeholder>
@@ -25,19 +28,22 @@
                     <rect key="frame" x="56" y="226" width="262.5" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TaV-oq-B61" customClass="MDCTextField">
                     <rect key="frame" x="56" y="298" width="262.5" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnD-KW-RBb" customClass="MDCButton">
                     <rect key="frame" x="109" y="410" width="157.5" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="LOGIN"/>
+                    <connections>
+                        <action selector="loginButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="qCn-4P-V1m"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.24388776370955267" green="0.76322480383433278" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
