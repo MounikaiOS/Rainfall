@@ -95,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				46B4BA451FB9BAB700443924 /* RainfallDemo */,
+				46B4BA521FB9BAB700443924 /* Info.plist */,
 				46B4BA5A1FB9BAB700443924 /* RainfallDemoTests */,
 				46B4BA651FB9BAB700443924 /* RainfallDemoUITests */,
 				46B4BA441FB9BAB700443924 /* Products */,
@@ -164,7 +165,6 @@
 				46B4BA4A1FB9BAB700443924 /* Main.storyboard */,
 				46B4BA4D1FB9BAB700443924 /* Assets.xcassets */,
 				46B4BA4F1FB9BAB700443924 /* LaunchScreen.storyboard */,
-				46B4BA521FB9BAB700443924 /* Info.plist */,
 			);
 			path = Global;
 			sourceTree = "<group>";
