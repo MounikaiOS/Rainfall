@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		46B4BA471FB9BAB700443924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA461FB9BAB700443924 /* AppDelegate.swift */; };
-		46B4BA491FB9BAB700443924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA481FB9BAB700443924 /* ViewController.swift */; };
+		46B4BA491FB9BAB700443924 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA481FB9BAB700443924 /* LoginVC.swift */; };
 		46B4BA4C1FB9BAB700443924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B4BA4A1FB9BAB700443924 /* Main.storyboard */; };
 		46B4BA4E1FB9BAB700443924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B4BA4D1FB9BAB700443924 /* Assets.xcassets */; };
 		46B4BA511FB9BAB700443924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B4BA4F1FB9BAB700443924 /* LaunchScreen.storyboard */; };
 		46B4BA5C1FB9BAB700443924 /* RainfallDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA5B1FB9BAB700443924 /* RainfallDemoTests.swift */; };
 		46B4BA671FB9BAB700443924 /* RainfallDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4BA661FB9BAB700443924 /* RainfallDemoUITests.swift */; };
-		46B4BA771FB9C3A300443924 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B4BA761FB9C3A300443924 /* LoginVC.xib */; };
 		5B79C0B192A5E0E8AE3A0A0E /* Pods_RainfallDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2BA6D31B2E77DB0E5E9BC7 /* Pods_RainfallDemoTests.framework */; };
+		8F5071D01FBAAE2B00407987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5071CF1FBAAE2B00407987 /* ViewController.swift */; };
+		8F5071D21FBAB00700407987 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5071D11FBAB00700407987 /* LoginView.xib */; };
 		BBF284B84B81828B02B8575F /* Pods_RainfallDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0FC954229956201CA551C8 /* Pods_RainfallDemoUITests.framework */; };
 		E07DDD23BBC7D0E383465B45 /* Pods_RainfallDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403EEF3E43504EA716DA7FFF /* Pods_RainfallDemo.framework */; };
 /* End PBXBuildFile section */
@@ -43,7 +44,7 @@
 		41E907275BE161AAF77572C9 /* Pods-RainfallDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		46B4BA431FB9BAB700443924 /* RainfallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainfallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B4BA461FB9BAB700443924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46B4BA481FB9BAB700443924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46B4BA481FB9BAB700443924 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		46B4BA4B1FB9BAB700443924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B4BA4D1FB9BAB700443924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B4BA501FB9BAB700443924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,9 +55,10 @@
 		46B4BA621FB9BAB700443924 /* RainfallDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainfallDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B4BA661FB9BAB700443924 /* RainfallDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainfallDemoUITests.swift; sourceTree = "<group>"; };
 		46B4BA681FB9BAB700443924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46B4BA761FB9C3A300443924 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		6A2BA6D31B2E77DB0E5E9BC7 /* Pods_RainfallDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainfallDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845751C3E6CC36E7BAABF022 /* Pods-RainfallDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F5071CF1FBAAE2B00407987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F5071D11FBAB00700407987 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		A961760A4A18FA35A6B8FA12 /* Pods-RainfallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemo/Pods-RainfallDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F710E3118A2524CA041939 /* Pods-RainfallDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoUITests/Pods-RainfallDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8165F91EA0D2CE293F782A1 /* Pods-RainfallDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainfallDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainfallDemoTests/Pods-RainfallDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,7 +147,7 @@
 		46B4BA741FB9C36D00443924 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				46B4BA761FB9C3A300443924 /* LoginVC.xib */,
+				8F5071D11FBAB00700407987 /* LoginView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,7 +155,8 @@
 		46B4BA751FB9C37700443924 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				46B4BA481FB9BAB700443924 /* ViewController.swift */,
+				46B4BA481FB9BAB700443924 /* LoginVC.swift */,
+				8F5071CF1FBAAE2B00407987 /* ViewController.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -310,7 +313,7 @@
 			files = (
 				46B4BA511FB9BAB700443924 /* LaunchScreen.storyboard in Resources */,
 				46B4BA4E1FB9BAB700443924 /* Assets.xcassets in Resources */,
-				46B4BA771FB9C3A300443924 /* LoginVC.xib in Resources */,
+				8F5071D21FBAB00700407987 /* LoginView.xib in Resources */,
 				46B4BA4C1FB9BAB700443924 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +499,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B4BA491FB9BAB700443924 /* ViewController.swift in Sources */,
+				8F5071D01FBAAE2B00407987 /* ViewController.swift in Sources */,
+				46B4BA491FB9BAB700443924 /* LoginVC.swift in Sources */,
 				46B4BA471FB9BAB700443924 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

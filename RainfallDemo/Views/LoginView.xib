@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="RainfallDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="eCi-R8-EW5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9c-4i-rH5" customClass="MDCTextField">
+                    <rect key="frame" x="56" y="226" width="262.5" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TaV-oq-B61" customClass="MDCTextField">
+                    <rect key="frame" x="56" y="298" width="262.5" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnD-KW-RBb" customClass="MDCButton">
+                    <rect key="frame" x="109" y="410" width="157.5" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="LOGIN"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.24388776370955267" green="0.76322480383433278" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YnD-KW-RBb" firstAttribute="width" secondItem="TaV-oq-B61" secondAttribute="width" multiplier="0.6" id="0lV-pr-PxP"/>
+                <constraint firstItem="TaV-oq-B61" firstAttribute="centerX" secondItem="t9c-4i-rH5" secondAttribute="centerX" id="3qe-r4-KeB"/>
+                <constraint firstItem="YnD-KW-RBb" firstAttribute="top" secondItem="TaV-oq-B61" secondAttribute="bottom" constant="82" id="75Y-qS-yH2"/>
+                <constraint firstItem="t9c-4i-rH5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="IBr-9C-hgF"/>
+                <constraint firstItem="t9c-4i-rH5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="206" id="Ijv-mx-yG3"/>
+                <constraint firstItem="t9c-4i-rH5" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="KXY-8u-9il"/>
+                <constraint firstItem="TaV-oq-B61" firstAttribute="width" secondItem="t9c-4i-rH5" secondAttribute="width" id="T8J-hm-qOu"/>
+                <constraint firstItem="TaV-oq-B61" firstAttribute="top" secondItem="t9c-4i-rH5" secondAttribute="bottom" constant="42" id="a9O-rH-IYQ"/>
+                <constraint firstItem="YnD-KW-RBb" firstAttribute="centerX" secondItem="TaV-oq-B61" secondAttribute="centerX" id="uik-Do-mgX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="84.5"/>
+        </view>
+    </objects>
+</document>
