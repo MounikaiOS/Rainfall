@@ -12,7 +12,7 @@ import MaterialComponents
 class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameField: MDCTextField!
     @IBOutlet weak var passwordField: MDCTextField!
-    @IBOutlet weak var loginButton: MDCButton!
+    @IBOutlet weak var loginButton: MDCRaisedButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
