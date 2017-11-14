@@ -38,7 +38,7 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         self.scrollView.contentSize = CGSize(width:self.scrollView.frame.size.width * 4,height: self.scrollView.frame.size.height)
         let pageControlSize = pageControl.sizeThatFits(scrollView.bounds.size)
         pageControl.frame = CGRect(x: 0, y: scrollView.bounds.height - 50, width: scrollView.bounds.width, height: pageControlSize.height)
-        pageControl.addTarget(self, action: #selector(self.didChangePage(sender:)), for: UIControlEvents.valueChanged)
+//        pageControl.addTarget(self, action: #selector(self.didChangePage(sender:)), for: UIControlEvents.valueChanged)
         pageControl.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
         view.addSubview(pageControl)
         // Do any additional setup after loading the view.
@@ -48,7 +48,7 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         scrollView.setContentOffset(CGPoint(x:x, y:0), animated: true)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageControl.currentPage = Int(pageNumber)
