@@ -12,17 +12,17 @@ import MaterialComponents.MaterialAppBar
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialCollections
 
-class GridVC: MDCCollectionViewController {
+class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
     let appBar = MDCAppBar()
     let fab = MDCFloatingButton()
-    
+    var sectionCount = 5
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView!.register(MDCCollectionViewTextCell.self, forCellWithReuseIdentifier: "cell")
         styler.cellStyle = .card
         
         addChildViewController(appBar.headerViewController)
-        appBar.headerViewController.headerView.backgroundColor = UIColor(red: 1.0, green: 0.76, blue: 0.03, alpha: 1.0)
+        appBar.headerViewController.headerView.backgroundColor = UIColor(red: 230/255, green: 78/255, blue: 92/255, alpha: 1.0)
         
         appBar.headerViewController.headerView.trackingScrollView = self.collectionView
         appBar.addSubviewsToParent()
@@ -47,24 +47,43 @@ class GridVC: MDCCollectionViewController {
         editor.isEditing = !editor.isEditing
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: editor.isEditing ? "Cancel" : "Edit", style: .plain, target: self, action: #selector(self.barButtonDidTap(sender:)))
+        
     }
     
     @objc func fabDidTap(sender: UIButton) {
+        self.sectionCount = !sender.isSelected ? self.sectionCount + 1 : (self.sectionCount > 0) ? self.sectionCount - 1 : self.sectionCount
         sender.isSelected = !sender.isSelected
+        self.collectionView?.reloadData()
+        
     }
-    
+   
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 5
+        return self.sectionCount
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        let completion = {(accepted: Bool) in
+            // perform analytics here
+            // and record whether the highlight was accepted
+        }
+        if indexPath.item % 2 == 0 {
+            let highlightController = MDCFeatureHighlightViewController(highlightedView: UIView.init(frame: CGRect(x: 0, y: 0, width: 200, height: 200)), completion: completion)
+            highlightController.titleText = "Just how you want it"
+            highlightController.bodyText = "Tap the menu button to switch accounts, change settings & more."
+            highlightController.outerHighlightColor =
+                UIColor.blue.withAlphaComponent(kMDCFeatureHighlightOuterHighlightAlpha)
+            present(highlightController, animated: true, completion:nil)
+        } else {
+            let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
+            self.navigationController?.pushViewController(detailVC, animated: true)
+
+        }
+        
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
