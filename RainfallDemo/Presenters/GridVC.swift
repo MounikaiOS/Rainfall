@@ -8,9 +8,7 @@
 
 
 import UIKit
-import MaterialComponents.MaterialAppBar
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialCollections
+import MaterialComponents
 
 class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
     let appBar = MDCAppBar()
@@ -23,7 +21,6 @@ class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
         
         addChildViewController(appBar.headerViewController)
         appBar.headerViewController.headerView.backgroundColor = UIColor(red: 230/255, green: 78/255, blue: 92/255, alpha: 1.0)
-        
         appBar.headerViewController.headerView.trackingScrollView = self.collectionView
         appBar.addSubviewsToParent()
         
