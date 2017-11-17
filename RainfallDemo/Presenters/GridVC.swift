@@ -10,27 +10,37 @@
 import UIKit
 import MaterialComponents
 
-class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
+class GridVC: MDCCollectionViewController {
     let appBar = MDCAppBar()
     let fab = MDCFloatingButton()
     var sectionCount = 5
+    var scrollOffsetY = 0.0
+    var logoScale = 0.0
+    
+    var  logoView = UIImageView()
+    var  logoSmallView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView!.register(MDCCollectionViewTextCell.self, forCellWithReuseIdentifier: "cell")
         styler.cellStyle = .card
-        
         addChildViewController(appBar.headerViewController)
-        appBar.headerViewController.headerView.backgroundColor = UIColor(red: 230/255, green: 78/255, blue: 92/255, alpha: 1.0)
         appBar.headerViewController.headerView.trackingScrollView = self.collectionView
+        appBar.headerViewController.headerView.maximumHeight = 240
+        appBar.headerViewController.headerView.minimumHeight = 76
+        appBar.headerViewController.headerView.addSubview(pestoHeaderView())
         appBar.addSubviewsToParent()
-        
-        title = "Material Components"
+        // Use a custom shadow under the flexible header.
+        let shadowLayer = MDCShadowLayer()
+        appBar.headerViewController.headerView.setShadowLayer(shadowLayer, intensityDidChange: { (layer, intensity) in
+            shadowLayer.elevation = ShadowElevation(rawValue: ShadowElevation.appBar.rawValue * intensity)
+        })
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(self.barButtonDidTap(sender:)))
         
-        appBar.navigationBar.tintColor = UIColor.black
         
         view.addSubview(fab)
+        //        view.addSubview(pestoHeaderView())
+        
         fab.translatesAutoresizingMaskIntoConstraints = false
         fab.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16.0).isActive = true
         fab.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16.0).isActive = true
@@ -38,8 +48,45 @@ class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
         fab.setTitle("+", for: .normal)
         fab.setTitle("-", for: .selected)
         fab.addTarget(self, action: #selector(self.fabDidTap(sender:)), for: .touchUpInside)
+        
     }
-    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        self.collectionView?.collectionViewLayout.invalidateLayout()
+        centerHeaderWithSize(size: size)
+    }
+    func centerHeaderWithSize(size: CGSize) {
+        let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
+        let width = size.width;
+        let headerFrame = self.appBar.headerViewController.headerView.bounds;
+        self.logoView.center = CGPoint(x: width/2.0, y: headerFrame.size.height / 2.0)
+        self.logoSmallView.center =
+            CGPoint(x: width / 2.0, y: (headerFrame.size.height - statusBarHeight) / 2.0 + statusBarHeight);
+    }
+    func pestoHeaderView() -> UIView {
+        let headerFrame = appBar.headerViewController.headerView.bounds
+        let pestoHeaderView = UIView.init(frame: headerFrame)
+        let teal = UIColor.init(red: 0.0, green: 0.67, blue: 0.55, alpha: 0.55)
+        pestoHeaderView.backgroundColor = teal
+        pestoHeaderView.layer.masksToBounds = true
+        pestoHeaderView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        let image = UIImage.init(named: "PestoLogoLarge")
+        logoView = UIImageView.init(image: image)
+        logoView.contentMode = .scaleAspectFill
+        logoView.center = CGPoint.init(x: pestoHeaderView.frame.size.width / 2.0, y: pestoHeaderView.frame.size.height / 2.0)
+        pestoHeaderView.addSubview(logoView)
+        
+        let logoSmallImage = UIImage.init(named: "PestoLogoLarge")
+        logoSmallView = UIImageView.init(image: logoSmallImage)
+        logoSmallView.contentMode = .scaleAspectFill
+        logoSmallView.layer.opacity = 0;
+        pestoHeaderView.addSubview(logoView)
+        //        let inkVC = MDCInkTouchController(view: pestoHeaderView)
+        //        inkVC.addInkView()
+        
+        return pestoHeaderView;
+    }
     @objc func barButtonDidTap(sender: UIBarButtonItem) {
         editor.isEditing = !editor.isEditing
         
@@ -53,7 +100,7 @@ class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
         self.collectionView?.reloadData()
         
     }
-   
+    
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -78,7 +125,7 @@ class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
         } else {
             let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
             self.navigationController?.pushViewController(detailVC, animated: true)
-
+            
         }
         
     }
@@ -98,9 +145,25 @@ class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
     // MARK: UIScrollViewDelegate
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView == appBar.headerViewController.headerView.trackingScrollView {
-            appBar.headerViewController.headerView.trackingScrollDidScroll()
+        self.scrollOffsetY = Double(scrollView.contentOffset.y)
+        self.appBar.headerViewController.scrollViewDidScroll(scrollView)
+        centerHeaderWithSize(size: self.view.frame.size)
+        self.logoScale = Double(scrollView.contentOffset.y / -240);
+        if (self.logoScale < 0.5) {
+            self.logoScale = 0.5
+            UIView.animate(withDuration: 0.33, delay: 0, options: .curveEaseInOut, animations: {
+                self.logoView.layer.opacity = 0
+                self.logoSmallView.layer.opacity = 1.0
+            }, completion: nil)
+        } else {
+            UIView.animate(withDuration: 0.33, delay: 0, options: .curveEaseInOut, animations: {
+                self.logoView.layer.opacity = 1.0
+                self.logoSmallView.layer.opacity = 0.0
+            }, completion: nil)
         }
+        let rotate = CGAffineTransform(rotationAngle: 0.0)
+        self.logoView.transform =
+            rotate.scaledBy(x: CGFloat(self.logoScale), y: CGFloat(self.logoScale));
     }
     
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -123,3 +186,4 @@ class GridVC: MDCCollectionViewController, MDCInkTouchControllerDelegate {
         }
     }
 }
+
