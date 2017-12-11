@@ -17,7 +17,12 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let appBar = MDCAppBar()
+        addChildViewController(appBar.headerViewController)
+        appBar.headerViewController.headerView.maximumHeight = 64
+        appBar.headerViewController.headerView.minimumHeight = 64
+        appBar.addSubviewsToParent()
+
     }
    
     override func viewWillAppear(_ animated: Bool) {

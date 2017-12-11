@@ -21,13 +21,14 @@ class GridVC: MDCCollectionViewController {
     var  logoSmallView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.collectionView!.register(MDCCollectionViewTextCell.self, forCellWithReuseIdentifier: "cell")
         styler.cellStyle = .card
         addChildViewController(appBar.headerViewController)
         appBar.headerViewController.headerView.trackingScrollView = self.collectionView
         appBar.headerViewController.headerView.maximumHeight = 240
         appBar.headerViewController.headerView.minimumHeight = 76
-        appBar.headerViewController.headerView.addSubview(pestoHeaderView())
+        appBar.headerViewController.headerView.insertSubview(pestoHeaderView(), at: 0)
         appBar.addSubviewsToParent()
         // Use a custom shadow under the flexible header.
         let shadowLayer = MDCShadowLayer()
@@ -82,8 +83,6 @@ class GridVC: MDCCollectionViewController {
         logoSmallView.contentMode = .scaleAspectFill
         logoSmallView.layer.opacity = 0;
         pestoHeaderView.addSubview(logoView)
-        //        let inkVC = MDCInkTouchController(view: pestoHeaderView)
-        //        inkVC.addInkView()
         
         return pestoHeaderView;
     }
@@ -115,18 +114,18 @@ class GridVC: MDCCollectionViewController {
             // perform analytics here
             // and record whether the highlight was accepted
         }
-        if indexPath.item % 2 == 0 {
+//        if indexPath.item % 2 == 0 {
             let highlightController = MDCFeatureHighlightViewController(highlightedView: UIView.init(frame: CGRect(x: 0, y: 0, width: 200, height: 200)), completion: completion)
             highlightController.titleText = "Just how you want it"
             highlightController.bodyText = "Tap the menu button to switch accounts, change settings & more."
             highlightController.outerHighlightColor =
                 UIColor.blue.withAlphaComponent(kMDCFeatureHighlightOuterHighlightAlpha)
             present(highlightController, animated: true, completion:nil)
-        } else {
-            let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
-            self.navigationController?.pushViewController(detailVC, animated: true)
-            
-        }
+//        } else {
+//            let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
+//            self.navigationController?.pushViewController(detailVC, animated: true)
+//
+//        }
         
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
